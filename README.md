@@ -1,6 +1,6 @@
 # song-bpm-nome
 
-Merged functionality of José M. Pérez's BPM finder and Metronome By Scott W. Hudson
+Merging José M. Pérez's BPM finder and Metronome By Scott W. Hudson with added functionalities
 
 Find a song with Spotify API & play metronome with found bpm.
 
