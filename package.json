@@ -17,6 +17,10 @@
     "email": "dpham5264@gmail.com"
   },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dpham89/song-bpm-nome.git"
+  },
   "config": {
     "forge": {
       "packagerConfig": {},
