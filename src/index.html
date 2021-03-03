@@ -27,7 +27,7 @@
                         <div class="bpmseeker mdl-cell mdl-cell--12-col">
                             <form>
                                 <input type="text" id="query" placeholder="Type the name of a track (e.g. Beyonce - Baby Boy)">
-                                <input type="submit" value="Search track &amp; Calculate tempo">
+                                <input type="submit" value="Search track &amp; Get tempo">
                             </form>
                             <div id="result">
                                 <div id="text"></div>
@@ -39,7 +39,7 @@
                             </div>
                             <footer style="margin-top: 15; margin-left: 15" class="about">
                                 BPM seeker By José M. Pérez @
-                                <a href="https://jmperezperez.com" "_blank">jmperezperez.com</a>
+                                <a href="https://jmperezperez.com" target="_blank">jmperezperez.com</a>
                             </footer>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
                                 oninput="tempo = event.target.value; bpmOutput.value = bpmInput.value;"
                             >
                             <div class="button-panel">
-                                <button style="margin-top:15px" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                                <button style="margin-top:15px" class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" onclick="play();">
                                     <i id="play-icon" class="material-icons" role="presentation">play_arrow</i>
                                     <span class="visuallyhidden">Add</span>
                                 </button>
