@@ -237,21 +237,13 @@ document.querySelector('form').addEventListener('submit', function (formEvent) {
                         return intB.count - intA.count;
                     }).splice(0, 5);
                     var calculatedBpm = Math.round(top[0].tempo);
-                    text.innerHTML = '<div id="guess">Guess for track <a style="color:#3F51B5">' + track.name + '</a> by <a style="color:#3F51B5">' +
-                        '' + track.artists[0].name + '</a> is ' + calculatedBpm + ' BPM' +
-                        ' with ' + top[0].count + ' samples.</div>';
                     bpmInput.value = calculatedBpm;
                     bpmInput.MaterialSlider.change(calculatedBpm);
                     bpmOutput.value = calculatedBpm;
                     tempo = calculatedBpm;
-                    text.innerHTML += '<div class="small">Other options are ' +
-                        top.slice(1).map(function (group) {
-                            return group.tempo + ' BPM (' + group.count + ')';
-                        }).join(', ') +
-                        '</div>';
-
                     var printENBPM = function (bpm) {
-                        text.innerHTML += '<div class="small">The tempo according to Spotify is ' +
+                        text.innerHTML = '<div class="small">Tempo for track <a style="color:#3F51B5">' + track.name + '</a> by <a style="color:#3F51B5">' +
+                            '' + track.artists[0].name + '</a> according to Spotify is ' +
                             bpm + ' BPM</div>';
                         bpmInput.value = bpm;
                         bpmInput.MaterialSlider.change(bpm);
